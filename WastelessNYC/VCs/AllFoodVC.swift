@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class AllFoodVC: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
@@ -50,13 +50,16 @@ extension AllFoodVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.FoodCell.rawValue, for: indexPath)
+      guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.FoodCell.rawValue, for: indexPath) as? FoodCell else {return UITableViewCell()}
         let post = posts[indexPath.row]
-//        cell.textLabel?.text = post.title
-//        cell.detailTextLabel?.text = post.body
-        return cell
-    }
+          cell.foodName.text = post.title
+          cell.dateExpiration.text = post.body
+        let url = URL(string: post.imageURL)
+      cell.foodImage.kf.setImage(with: url)
+      
+      return cell
 
+    }
 }
 
 extension AllFoodVC: UITableViewDelegate {
