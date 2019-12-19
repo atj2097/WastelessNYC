@@ -477,7 +477,7 @@
                         <outlet property="createPost" destination="v3S-ck-2NO" id="GoF-aQ-X6u"/>
                         <outlet property="datePicker" destination="rhO-Py-Egz" id="eol-DI-JwP"/>
                         <outlet property="foodTextInput" destination="vN1-Zi-l7j" id="Wsv-ye-nAg"/>
-                        <outlet property="imageView" destination="nYs-ob-O7F" id="QeT-6H-1mx"/>
+                        <outlet property="imageView" destination="Qrk-aw-qr7" id="aLH-Re-5uV"/>
                         <outlet property="uploadPhoto" destination="Bcg-ge-O8B" id="l8a-fE-rrx"/>
                     </connections>
                 </viewController>

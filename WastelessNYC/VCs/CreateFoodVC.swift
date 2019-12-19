@@ -9,6 +9,7 @@
 import UIKit
 import Photos
 import AssetsLibrary
+import FirebaseAuth
 
 class CreateFoodVC: UIViewController {
     var imagePicker: UIImagePickerController = {
@@ -25,9 +26,9 @@ class CreateFoodVC: UIViewController {
     var imageURL: URL? = nil
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var foodTextInput: UITextField!
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var createPost: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func openPhotoPicker(_ sender: UIButton) {
         present(imagePicker, animated: true)
@@ -48,9 +49,17 @@ class CreateFoodVC: UIViewController {
             return
         }
         
-        let newPost = Post(title: title, body: addy, creatorID: currentUser.uid, image: imageURLString, dateCreated: datePicker.date)
+        guard let currentUserID = Auth.auth().currentUser?.uid else {
+            return
+        }
+        
+        let newPost = Post(title: title, body: addy, creatorID: currentUserID, image: imageURLString, dateCreated: datePicker.date)
         FirestoreService.manager.createPost(post: newPost) { (result) in
         self.handlePostResponse(withResult: result)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            var allPostsVC = storyboard.instantiateViewController(identifier: "AllPosts") as! AllFoodVC
+            allPostsVC.modalPresentationStyle = .fullScreen
+            self.present(allPostsVC, animated: true, completion: nil)
         }
     }
     
@@ -76,6 +85,7 @@ class CreateFoodVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -122,7 +132,7 @@ extension CreateFoodVC: UIImagePickerControllerDelegate, UINavigationControllerD
 //            return
 //        }
         
-        guard let originalImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
+        guard let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
             
             print("Error")
             
