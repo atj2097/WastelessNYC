@@ -25,13 +25,28 @@ class PostDetailViewController: UIViewController {
         grabItAlertController()
     }
     
-    
-    override func viewDidLoad() {
+    private let locationManager = CLLocationManager()
+    let initialLocation = CLLocation(latitude: 40.7552889, longitude: -73.9577348)
+    let searchRadius: CLLocationDistance = 25
+
+
+  override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        locationAuthorization()
     }
     
+  private func locationAuthorization() {
+    let status = CLLocationManager.authorizationStatus()
+    switch status {
+    case .authorizedAlways, .authorizedWhenInUse:
+      mapViewLocation.showsUserLocation = true
+      locationManager.requestLocation()
+      locationManager.startUpdatingLocation()
+      locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    default:
+      locationManager.requestWhenInUseAuthorization()
+    }
+  }
 
     private func grabItAlertController() {
         let alertController = UIAlertController(title: "You can go pick up this item from this User ", message: "", preferredStyle: .actionSheet)
@@ -48,3 +63,24 @@ class PostDetailViewController: UIViewController {
     }
 
 }
+
+//extension PostDetailViewController: CLLocationManagerDelegate {
+//  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//    print("new location \(locations)")
+//  }
+//
+//  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+//    print("authorization status change to \(status.rawValue)")
+//
+//    switch status {
+//    case .authorizedAlways, .authorizedWhenInUse:
+//      locationManager.requestLocation()
+//    default:
+//      break
+//    }
+//  }
+//
+//  func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+//    print(error)
+//  }
+//}
