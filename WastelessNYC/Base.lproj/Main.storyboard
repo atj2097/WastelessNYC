@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignUpVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,16 +41,19 @@
                                 <rect key="frame" x="28" y="532" width="358" height="96"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="46"/>
-                                <state key="normal" title="Sign In">
+                                <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3p-tO-QRD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-Ob-yH1">
-                                <rect key="frame" x="28" y="682" width="358" height="68"/>
+                                <rect key="frame" x="21" y="682" width="373" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
-                                <state key="normal" title="Dont have an account?">
+                                <state key="normal" title="Already have an account?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -80,15 +83,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="h2w-tf-ASC"/>
+                    <connections>
+                        <outlet property="createUser" destination="xV2-5i-ffy" id="jbg-Ft-PLh"/>
+                        <outlet property="emailTextField" destination="SV8-6W-jZJ" id="jlH-ye-FgS"/>
+                        <outlet property="passwordTextField" destination="3TB-oQ-dwq" id="bwW-OX-7O8"/>
+                        <outlet property="signUpButton" destination="xV2-5i-ffy" id="8Um-2B-STd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="Eoe-aW-3dD">
             <objects>
-                <viewController id="kFm-Jh-SLD" sceneMemberID="viewController">
+                <viewController id="kFm-Jh-SLD" customClass="SignInVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KDt-Wm-rWB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,6 +131,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginUser:" destination="kFm-Jh-SLD" eventType="touchUpInside" id="fBh-tE-q3W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mC-VP-qug">
                                 <rect key="frame" x="21" y="657" width="373" height="68"/>
@@ -130,7 +142,7 @@
                                     <constraint firstAttribute="height" constant="68" id="U1k-p8-0uI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
-                                <state key="normal" title="Already have an account?">
+                                <state key="normal" title="Dont have an account?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -161,6 +173,11 @@
                         <viewLayoutGuide key="safeArea" id="aq3-lU-HAS"/>
                     </view>
                     <navigationItem key="navigationItem" id="k65-Ze-6uZ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="1bc-iY-d4r" id="CQ5-qD-Oit"/>
+                        <outlet property="passwordTextFiekld" destination="MHd-fC-MLh" id="EyD-sf-U8D"/>
+                        <outlet property="signupButton" destination="yAF-V7-MOi" id="Vvp-gh-ws1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQm-gS-Zek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -437,6 +454,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IKd-08-TMP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w7l-VR-RzX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

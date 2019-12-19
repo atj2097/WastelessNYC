@@ -19,6 +19,8 @@
 		CB43943823ABC7F4002B9165 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943723ABC7F4002B9165 /* FirebaseAuth.swift */; };
 		CB43943A23ABC813002B9165 /* FirebaseFirestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943923ABC813002B9165 /* FirebaseFirestor.swift */; };
 		CB43943C23ABC83E002B9165 /* FirebaseStoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */; };
+		CB43943E23ABC8F8002B9165 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943D23ABC8F8002B9165 /* SignUpVC.swift */; };
+		CB43944023ABC95E002B9165 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943F23ABC95E002B9165 /* SignInVC.swift */; };
 		CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F523ABB7280022B16B /* AppDelegate.swift */; };
 		CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F723ABB7280022B16B /* SceneDelegate.swift */; };
 		CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F923ABB7280022B16B /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		CB43943723ABC7F4002B9165 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
 		CB43943923ABC813002B9165 /* FirebaseFirestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestor.swift; sourceTree = "<group>"; };
 		CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStoreImage.swift; sourceTree = "<group>"; };
+		CB43943D23ABC8F8002B9165 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		CB43943F23ABC95E002B9165 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		CB9163F223ABB7280022B16B /* WastelessNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WastelessNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9163F523ABB7280022B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9163F723ABB7280022B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 			children = (
 				CB43942723ABC287002B9165 /* AllFoodVC.swift */,
 				CB43942D23ABC4A1002B9165 /* UserTableVC.swift */,
+				CB43943D23ABC8F8002B9165 /* SignUpVC.swift */,
+				CB43943F23ABC95E002B9165 /* SignInVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -474,12 +480,14 @@
 				CB43942823ABC288002B9165 /* AllFoodVC.swift in Sources */,
 				CB43943523ABC79C002B9165 /* AppUser.swift in Sources */,
 				CB43943823ABC7F4002B9165 /* FirebaseAuth.swift in Sources */,
+				CB43944023ABC95E002B9165 /* SignInVC.swift in Sources */,
 				CB43942B23ABC3A9002B9165 /* FoodCell.swift in Sources */,
 				CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */,
 				CB43943A23ABC813002B9165 /* FirebaseFirestor.swift in Sources */,
 				CB43943323ABC769002B9165 /* Post.swift in Sources */,
 				CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */,
 				CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */,
+				CB43943E23ABC8F8002B9165 /* SignUpVC.swift in Sources */,
 				CB91640023ABB7280022B16B /* WastelessNYC.xcdatamodeld in Sources */,
 				CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */,
 			);
