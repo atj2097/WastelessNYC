@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>137862148648-c3pp52gk9fpp14ojj2rpb7fqfvcf34mc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.137862148648-c3pp52gk9fpp14ojj2rpb7fqfvcf34mc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBILoTXjvaF2gxOcFSancySlfWbqCoOGds</string>
+	<key>GCM_SENDER_ID</key>
+	<string>137862148648</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>The-Best-Programmer-Ever.WastelessNYC</string>
+	<key>PROJECT_ID</key>
+	<string>wastelessnyc-80706</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wastelessnyc-80706.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:137862148648:ios:228cfede377d06b48a7b1d</string>
+	<key>DATABASE_URL</key>
+	<string>https://wastelessnyc-80706.firebaseio.com</string>
+</dict>
+</plist>

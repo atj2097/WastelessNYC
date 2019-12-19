@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		CB43942823ABC288002B9165 /* AllFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43942723ABC287002B9165 /* AllFoodVC.swift */; };
 		CB43942B23ABC3A9002B9165 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43942A23ABC3A9002B9165 /* FoodCell.swift */; };
 		CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43942D23ABC4A1002B9165 /* UserTableVC.swift */; };
+		CB43943023ABC6D1002B9165 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB43942F23ABC6D1002B9165 /* GoogleService-Info.plist */; };
+		CB43943323ABC769002B9165 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943223ABC769002B9165 /* Post.swift */; };
+		CB43943523ABC79C002B9165 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943423ABC79C002B9165 /* AppUser.swift */; };
+		CB43943823ABC7F4002B9165 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943723ABC7F4002B9165 /* FirebaseAuth.swift */; };
+		CB43943A23ABC813002B9165 /* FirebaseFirestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943923ABC813002B9165 /* FirebaseFirestor.swift */; };
+		CB43943C23ABC83E002B9165 /* FirebaseStoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */; };
 		CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F523ABB7280022B16B /* AppDelegate.swift */; };
 		CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F723ABB7280022B16B /* SceneDelegate.swift */; };
 		CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F923ABB7280022B16B /* ViewController.swift */; };
@@ -53,6 +59,12 @@
 		CB43942723ABC287002B9165 /* AllFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFoodVC.swift; sourceTree = "<group>"; };
 		CB43942A23ABC3A9002B9165 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		CB43942D23ABC4A1002B9165 /* UserTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableVC.swift; sourceTree = "<group>"; };
+		CB43942F23ABC6D1002B9165 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB43943223ABC769002B9165 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CB43943423ABC79C002B9165 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		CB43943723ABC7F4002B9165 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
+		CB43943923ABC813002B9165 /* FirebaseFirestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestor.swift; sourceTree = "<group>"; };
+		CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStoreImage.swift; sourceTree = "<group>"; };
 		CB9163F223ABB7280022B16B /* WastelessNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WastelessNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9163F523ABB7280022B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9163F723ABB7280022B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +121,6 @@
 				54ACC8083C4CEC9D385ADEB6 /* Pods-WastelessNYCTests.debug.xcconfig */,
 				525EE72E7C8BCF8033EDA09A /* Pods-WastelessNYCTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +151,25 @@
 			path = VCs;
 			sourceTree = "<group>";
 		};
+		CB43943123ABC756002B9165 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB43943223ABC769002B9165 /* Post.swift */,
+				CB43943423ABC79C002B9165 /* AppUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB43943623ABC7E6002B9165 /* FirebaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB43943723ABC7F4002B9165 /* FirebaseAuth.swift */,
+				CB43943923ABC813002B9165 /* FirebaseFirestor.swift */,
+				CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */,
+			);
+			path = FirebaseHelpers;
+			sourceTree = "<group>";
+		};
 		CB9163E923ABB7280022B16B = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +195,9 @@
 		CB9163F423ABB7280022B16B /* WastelessNYC */ = {
 			isa = PBXGroup;
 			children = (
+				CB43943623ABC7E6002B9165 /* FirebaseHelpers */,
+				CB43943123ABC756002B9165 /* Models */,
+				CB43942F23ABC6D1002B9165 /* GoogleService-Info.plist */,
 				CB43942C23ABC47C002B9165 /* VCs */,
 				CB43942923ABC388002B9165 /* Cells */,
 				CB9163F523ABB7280022B16B /* AppDelegate.swift */,
@@ -307,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB91640523ABB72A0022B16B /* LaunchScreen.storyboard in Resources */,
+				CB43943023ABC6D1002B9165 /* GoogleService-Info.plist in Resources */,
 				CB91640223ABB72A0022B16B /* Assets.xcassets in Resources */,
 				CB9163FD23ABB7280022B16B /* Main.storyboard in Resources */,
 			);
@@ -436,9 +470,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB43943C23ABC83E002B9165 /* FirebaseStoreImage.swift in Sources */,
 				CB43942823ABC288002B9165 /* AllFoodVC.swift in Sources */,
+				CB43943523ABC79C002B9165 /* AppUser.swift in Sources */,
+				CB43943823ABC7F4002B9165 /* FirebaseAuth.swift in Sources */,
 				CB43942B23ABC3A9002B9165 /* FoodCell.swift in Sources */,
 				CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */,
+				CB43943A23ABC813002B9165 /* FirebaseFirestor.swift in Sources */,
+				CB43943323ABC769002B9165 /* Post.swift in Sources */,
 				CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */,
 				CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */,
 				CB91640023ABB7280022B16B /* WastelessNYC.xcdatamodeld in Sources */,
