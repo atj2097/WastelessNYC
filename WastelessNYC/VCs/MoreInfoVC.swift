@@ -9,6 +9,13 @@
 import UIKit
 
 class MoreInfoVC: UIViewController {
+    
+    var foodList = [Food](){
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
+    
     @IBOutlet weak var infoText: UITextView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var extendedExpiration: UILabel!
@@ -19,31 +26,42 @@ class MoreInfoVC: UIViewController {
   
   override func viewDidLoad() {
         super.viewDidLoad()
+        setUpLabels()
 
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+ 
+    func setUpLabels(){
+        foodName.text = "Type of Food"
+        extendedExpiration.text = "Date Extension"
+        infoText.text = "An expired date does not necessarily mean that the food needs to be thrown out.  These Expiration Date Extensions are guidelines to help you determine if expired food can still be used.  Always use common sense and good judgment when determining if food is safe to eat and remember: 'When in doubt, throw it out!'"
     }
-    */
-
 }
 
 
 extension MoreInfoVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    <#code#>
+    return foodList.count
   }
-  
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        <#code#>
+//    }
+//  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    <#code#>
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.ExCell.rawValue) else
+    {return UITableViewCell()}
+    let food = foodList[indexPath.row]
+    cell.textLabel?.text = food.foodItem
+    cell.detailTextLabel?.text = food.dateExtension
+    
+    return cell
   }
   
   

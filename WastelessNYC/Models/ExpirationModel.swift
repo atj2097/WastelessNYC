@@ -1,12 +1,14 @@
 import UIKit
 
 struct FoodGuidelines: Codable {
-  let Categories: [Food]
+  let Categories: [FoodWrapper]
 }
-struct Food: Codable {
-  var data: FoodWrapper
+
+struct FoodWrapper: Codable {
+  var data: Food
 }
-class FoodWrapper: Codable{
+
+struct Food: Codable{
    
   let foodItem: String?
   let dateExtension: String?
@@ -26,7 +28,7 @@ class FoodWrapper: Codable{
       let data = try Data(contentsOf: fileURL)
       let food = try
         JSONDecoder().decode(FoodGuidelines.self, from: data)
-      return food.Categories
+        return food.Categories.map {$0.data }
        
     } catch {
       fatalError("\(error)")
