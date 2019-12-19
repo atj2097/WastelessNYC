@@ -19,13 +19,22 @@ class AllFoodVC: UIViewController {
             self.tableView.reloadData()
         }
     }
+  
+  var searchString: String? = nil {
+    didSet {
+      tableView.reloadData()
+      getPosts()
+      searchBar.delegate = self
+    }
+  }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         getPosts()
-        // Do any additional setup after loading the view.
     }
+  
     private func getPosts() {
         FirestoreService.manager.getAllPosts { (result) in
             switch result {
@@ -69,4 +78,18 @@ extension AllFoodVC: UITableViewDelegate {
         postDetailVC.post = post
 self.navigationController?.pushViewController(postDetailVC, animated: true)
     }
+}
+
+
+extension AllFoodVC: UISearchBarDelegate {
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    searchString = searchBar.text?.lowercased()
+    
+    getPosts()
+  }
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    searchBar.resignFirstResponder()
+  }
+  
+  
 }
