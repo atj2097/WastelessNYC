@@ -27,12 +27,49 @@ class MoreInfoVC: UIViewController {
   override func viewDidLoad() {
         super.viewDidLoad()
         setUpLabels()
+    tableView.dataSource = self
+    tableView.delegate = self
+    foodList = getFoodGuidelines()
+   // loadData()
+    //FoodGuidelines
+  //  print(foodList.count)
+  //  dump(foodList)
 
         // Do any additional setup after loading the view.
     }
     
 
- 
+  private func getFoodGuidelines() -> [Food] {
+      guard let fileName = Bundle.main.path(forResource: "ExpirationGuidelines", ofType: "json")
+        else {fatalError()}
+      let fileURL = URL(fileURLWithPath: fileName)
+      do {
+        let data = try Data(contentsOf: fileURL)
+        let food = try
+          JSONDecoder().decode(FoodGuidelines.self, from: data)
+        
+          return food.Categories.map {$0.data }
+         
+      } catch {
+        fatalError("\(error)")
+      }
+    }
+    
+//    func loadData() {
+//
+//        guard let pathToData = Bundle.main.path(forResource: "austell2", ofType: "json")
+//            else {
+//                fatalError("austell.json file not found")
+//        }
+//        let internalUrl = URL(fileURLWithPath: pathToData)
+//        do {
+//            let data = try Data(contentsOf: internalUrl)
+//            let signsFromJSON = try
+//                signs = Welcome.getStreetSigns()
+//        } catch {
+//            print(error)
+//        }
+//    }
     func setUpLabels(){
         foodName.text = "Type of Food"
         extendedExpiration.text = "Date Extension"
