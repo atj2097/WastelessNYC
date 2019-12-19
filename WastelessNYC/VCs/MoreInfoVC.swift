@@ -14,7 +14,10 @@ class MoreInfoVC: UIViewController {
     @IBOutlet weak var extendedExpiration: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
-    override func viewDidLoad() {
+   
+  
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -31,4 +34,18 @@ class MoreInfoVC: UIViewController {
     }
     */
 
+}
+
+
+extension MoreInfoVC: UITableViewDelegate, UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    <#code#>
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    <#code#>
+  }
+  
+  
+  
 }
