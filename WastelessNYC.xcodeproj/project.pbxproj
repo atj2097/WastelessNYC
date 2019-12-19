@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0268D33F10882F4B410CD2C3 /* Pods_WastelessNYCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E6EF67D1C04AF07DA1D1AA /* Pods_WastelessNYCTests.framework */; };
+		0658C9A461C9A1C1BB437DD5 /* Pods_WastelessNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D39FCBE6970F0AE845D0479 /* Pods_WastelessNYC.framework */; };
+		25C0AD7B5F954B00ED557B04 /* Pods_WastelessNYC_WastelessNYCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EDBC60D16B785B66221A8A /* Pods_WastelessNYC_WastelessNYCUITests.framework */; };
+		CB43942823ABC288002B9165 /* AllFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43942723ABC287002B9165 /* AllFoodVC.swift */; };
+		CB43942B23ABC3A9002B9165 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43942A23ABC3A9002B9165 /* FoodCell.swift */; };
+		CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43942D23ABC4A1002B9165 /* UserTableVC.swift */; };
 		CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F523ABB7280022B16B /* AppDelegate.swift */; };
 		CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F723ABB7280022B16B /* SceneDelegate.swift */; };
 		CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F923ABB7280022B16B /* ViewController.swift */; };
@@ -36,6 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E305031906D6FC298424AF0 /* Pods-WastelessNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYC.debug.xcconfig"; path = "Target Support Files/Pods-WastelessNYC/Pods-WastelessNYC.debug.xcconfig"; sourceTree = "<group>"; };
+		20D8D0E59D086502F9D96339 /* Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig"; path = "Target Support Files/Pods-WastelessNYC-WastelessNYCUITests/Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		525EE72E7C8BCF8033EDA09A /* Pods-WastelessNYCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYCTests.release.xcconfig"; path = "Target Support Files/Pods-WastelessNYCTests/Pods-WastelessNYCTests.release.xcconfig"; sourceTree = "<group>"; };
+		54ACC8083C4CEC9D385ADEB6 /* Pods-WastelessNYCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYCTests.debug.xcconfig"; path = "Target Support Files/Pods-WastelessNYCTests/Pods-WastelessNYCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72D367A08B49CF88AC11A8A3 /* Pods-WastelessNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYC.release.xcconfig"; path = "Target Support Files/Pods-WastelessNYC/Pods-WastelessNYC.release.xcconfig"; sourceTree = "<group>"; };
+		7D39FCBE6970F0AE845D0479 /* Pods_WastelessNYC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WastelessNYC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EDBC60D16B785B66221A8A /* Pods_WastelessNYC_WastelessNYCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WastelessNYC_WastelessNYCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E6EF67D1C04AF07DA1D1AA /* Pods_WastelessNYCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WastelessNYCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB43942723ABC287002B9165 /* AllFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFoodVC.swift; sourceTree = "<group>"; };
+		CB43942A23ABC3A9002B9165 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		CB43942D23ABC4A1002B9165 /* UserTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableVC.swift; sourceTree = "<group>"; };
 		CB9163F223ABB7280022B16B /* WastelessNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WastelessNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9163F523ABB7280022B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9163F723ABB7280022B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +68,7 @@
 		CB91641623ABB72B0022B16B /* WastelessNYCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WastelessNYCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB91641A23ABB72B0022B16B /* WastelessNYCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WastelessNYCUITests.swift; sourceTree = "<group>"; };
 		CB91641C23ABB72B0022B16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F62EE36C16A6BDDA63D73343 /* Pods-WastelessNYC-WastelessNYCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYC-WastelessNYCUITests.debug.xcconfig"; path = "Target Support Files/Pods-WastelessNYC-WastelessNYCUITests/Pods-WastelessNYC-WastelessNYCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0658C9A461C9A1C1BB437DD5 /* Pods_WastelessNYC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0268D33F10882F4B410CD2C3 /* Pods_WastelessNYCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C0AD7B5F954B00ED557B04 /* Pods_WastelessNYC_WastelessNYCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63658A76E2C19A311E91EFA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E305031906D6FC298424AF0 /* Pods-WastelessNYC.debug.xcconfig */,
+				72D367A08B49CF88AC11A8A3 /* Pods-WastelessNYC.release.xcconfig */,
+				F62EE36C16A6BDDA63D73343 /* Pods-WastelessNYC-WastelessNYCUITests.debug.xcconfig */,
+				20D8D0E59D086502F9D96339 /* Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig */,
+				54ACC8083C4CEC9D385ADEB6 /* Pods-WastelessNYCTests.debug.xcconfig */,
+				525EE72E7C8BCF8033EDA09A /* Pods-WastelessNYCTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A16E8F5B24BFB2BB456E485C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D39FCBE6970F0AE845D0479 /* Pods_WastelessNYC.framework */,
+				A5EDBC60D16B785B66221A8A /* Pods_WastelessNYC_WastelessNYCUITests.framework */,
+				B9E6EF67D1C04AF07DA1D1AA /* Pods_WastelessNYCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB43942923ABC388002B9165 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB43942A23ABC3A9002B9165 /* FoodCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB43942C23ABC47C002B9165 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				CB43942723ABC287002B9165 /* AllFoodVC.swift */,
+				CB43942D23ABC4A1002B9165 /* UserTableVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
 		CB9163E923ABB7280022B16B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +147,8 @@
 				CB91640E23ABB72A0022B16B /* WastelessNYCTests */,
 				CB91641923ABB72B0022B16B /* WastelessNYCUITests */,
 				CB9163F323ABB7280022B16B /* Products */,
+				63658A76E2C19A311E91EFA3 /* Pods */,
+				A16E8F5B24BFB2BB456E485C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +165,8 @@
 		CB9163F423ABB7280022B16B /* WastelessNYC */ = {
 			isa = PBXGroup;
 			children = (
+				CB43942C23ABC47C002B9165 /* VCs */,
+				CB43942923ABC388002B9165 /* Cells */,
 				CB9163F523ABB7280022B16B /* AppDelegate.swift */,
 				CB9163F723ABB7280022B16B /* SceneDelegate.swift */,
 				CB9163F923ABB7280022B16B /* ViewController.swift */,
@@ -138,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB91641F23ABB72B0022B16B /* Build configuration list for PBXNativeTarget "WastelessNYC" */;
 			buildPhases = (
+				907DB38AACF32DCC0458E6AC /* [CP] Check Pods Manifest.lock */,
 				CB9163EE23ABB7280022B16B /* Sources */,
 				CB9163EF23ABB7280022B16B /* Frameworks */,
 				CB9163F023ABB7280022B16B /* Resources */,
+				27144EAB9BB3DCCA2D2FA0BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB91642223ABB72B0022B16B /* Build configuration list for PBXNativeTarget "WastelessNYCTests" */;
 			buildPhases = (
+				D68A944E8565EF70E2213A02 /* [CP] Check Pods Manifest.lock */,
 				CB91640723ABB72A0022B16B /* Sources */,
 				CB91640823ABB72A0022B16B /* Frameworks */,
 				CB91640923ABB72A0022B16B /* Resources */,
@@ -173,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB91642523ABB72B0022B16B /* Build configuration list for PBXNativeTarget "WastelessNYCUITests" */;
 			buildPhases = (
+				E520DFFBEA21E335F22D02CB /* [CP] Check Pods Manifest.lock */,
 				CB91641223ABB72B0022B16B /* Sources */,
 				CB91641323ABB72B0022B16B /* Frameworks */,
 				CB91641423ABB72B0022B16B /* Resources */,
+				B6334952E7858EE19A2068FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,12 +328,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27144EAB9BB3DCCA2D2FA0BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WastelessNYC/Pods-WastelessNYC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WastelessNYC/Pods-WastelessNYC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WastelessNYC/Pods-WastelessNYC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		907DB38AACF32DCC0458E6AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WastelessNYC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6334952E7858EE19A2068FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WastelessNYC-WastelessNYCUITests/Pods-WastelessNYC-WastelessNYCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WastelessNYC-WastelessNYCUITests/Pods-WastelessNYC-WastelessNYCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WastelessNYC-WastelessNYCUITests/Pods-WastelessNYC-WastelessNYCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68A944E8565EF70E2213A02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WastelessNYCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E520DFFBEA21E335F22D02CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WastelessNYC-WastelessNYCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB9163EE23ABB7280022B16B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB43942823ABC288002B9165 /* AllFoodVC.swift in Sources */,
+				CB43942B23ABC3A9002B9165 /* FoodCell.swift in Sources */,
 				CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */,
+				CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */,
 				CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */,
 				CB91640023ABB7280022B16B /* WastelessNYC.xcdatamodeld in Sources */,
 				CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */,
@@ -436,6 +613,7 @@
 		};
 		CB91642023ABB72B0022B16B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E305031906D6FC298424AF0 /* Pods-WastelessNYC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +631,7 @@
 		};
 		CB91642123ABB72B0022B16B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D367A08B49CF88AC11A8A3 /* Pods-WastelessNYC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +649,7 @@
 		};
 		CB91642323ABB72B0022B16B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ACC8083C4CEC9D385ADEB6 /* Pods-WastelessNYCTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +671,7 @@
 		};
 		CB91642423ABB72B0022B16B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 525EE72E7C8BCF8033EDA09A /* Pods-WastelessNYCTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +693,7 @@
 		};
 		CB91642623ABB72B0022B16B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62EE36C16A6BDDA63D73343 /* Pods-WastelessNYC-WastelessNYCUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +713,7 @@
 		};
 		CB91642723ABB72B0022B16B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D8D0E59D086502F9D96339 /* Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

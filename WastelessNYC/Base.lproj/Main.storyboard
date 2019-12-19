@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="1091" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--All FoodVC-->
         <scene sceneID="rAI-R2-Hsb">
             <objects>
-                <viewController id="l4k-aI-T1g" sceneMemberID="viewController">
+                <viewController id="l4k-aI-T1g" customClass="AllFoodVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BLW-g7-MyR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="121" id="3wy-8h-7PS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="121" id="3wy-8h-7PS" customClass="FoodCell" customModule="WastelessNYC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="414" height="121"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3wy-8h-7PS" id="EjX-z9-aOS">
@@ -211,6 +211,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateExpiration" destination="yhF-M6-ydr" id="IPq-gj-j3i"/>
+                                            <outlet property="foodImage" destination="S4h-Fq-KlV" id="tKJ-2I-anO"/>
+                                            <outlet property="foodName" destination="vlQ-aV-8SD" id="TOO-zh-ucT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -219,6 +224,9 @@
                         <viewLayoutGuide key="safeArea" id="XK3-mo-gvW"/>
                     </view>
                     <navigationItem key="navigationItem" id="l18-EL-NKX"/>
+                    <connections>
+                        <outlet property="tableView" destination="c2q-se-oUU" id="f6v-tJ-ZYN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mej-nV-x00" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,10 +290,10 @@
             </objects>
             <point key="canvasLocation" x="5528" y="58"/>
         </scene>
-        <!--View Controller-->
+        <!--User TableVC-->
         <scene sceneID="hdx-ux-0OP">
             <objects>
-                <viewController id="lo9-9E-yaz" sceneMemberID="viewController">
+                <viewController id="lo9-9E-yaz" customClass="UserTableVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ANh-bA-YU6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
