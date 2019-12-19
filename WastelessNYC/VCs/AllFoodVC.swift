@@ -55,6 +55,7 @@ extension AllFoodVC: UITableViewDataSource {
 //        cell.detailTextLabel?.text = post.body
         return cell
     }
+
 }
 
 extension AllFoodVC: UITableViewDelegate {
