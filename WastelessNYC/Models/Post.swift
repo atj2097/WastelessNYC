@@ -45,7 +45,7 @@ struct Post {
             "title": self.title,
             "body": self.body,
             "creatorID": self.creatorID,
-            "imageURL": self.imageURL
+            "imageURL": self.imageURL,
         ]
     }
 }

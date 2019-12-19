@@ -116,7 +116,21 @@ class FirestoreService {
         }
         
     }
-    
+    func getPostsForLocation(forLocation: String, completion: @escaping (Result<[Post], Error>) -> ()) {
+        db.collection(FireStoreCollections.posts.rawValue).whereField("body", isEqualTo: forLocation).getDocuments { (snapshot, error) in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                let posts = snapshot?.documents.compactMap({ (snapshot) -> Post? in
+                    let postID = snapshot.documentID
+                    let post = Post(from: snapshot.data(), id: postID)
+                    return post
+                })
+                completion(.success(posts ?? []))
+            }
+        }
+        
+    }
     private init () {}
 }
 

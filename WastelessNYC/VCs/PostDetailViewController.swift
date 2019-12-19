@@ -32,10 +32,14 @@ class PostDetailViewController: UIViewController {
 
   override func viewDidLoad() {
         super.viewDidLoad()
+    locationManager.delegate = self 
         locationAuthorization()
         setUpData()
+    
         // Do any additional setup after loading the view.
     }
+    
+
     
   private func locationAuthorization() {
     let status = CLLocationManager.authorizationStatus()
@@ -61,8 +65,8 @@ class PostDetailViewController: UIViewController {
     }
     
     private func setUpData() {
-        let url = URL(string: post.imageURL)
-        postImageView.kf.setImage(with: url)
+        let imageURL = URL(string: post.imageURL)
+        postImageView.kf.setImage(with: imageURL)
         foodName.text = post.title
         address.text = post.body
         date.text = post.dateCreated?.description
@@ -70,24 +74,28 @@ class PostDetailViewController: UIViewController {
 
 }
 
-//extension PostDetailViewController: CLLocationManagerDelegate {
-//  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//    print("new location \(locations)")
-//  }
-//
-//  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-//    print("authorization status change to \(status.rawValue)")
-//
-//    switch status {
-//    case .authorizedAlways, .authorizedWhenInUse:
-//      locationManager.requestLocation()
-//    default:
-//      break
-//    }
-//  }
-//
-//  func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-//    print(error)
-//  }
-//}
+extension PostDetailViewController: CLLocationManagerDelegate {
+   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        if locations.first != nil {
+            print("location: \(locations.first)")
+        }
+
+    }
+
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    print("authorization status change to \(status.rawValue)")
+
+    switch status {
+    case .authorizedAlways, .authorizedWhenInUse:
+      locationManager.requestLocation()
+    default:
+      break
+    }
+  }
+
+  func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    print(error)
+  }
+}
 
