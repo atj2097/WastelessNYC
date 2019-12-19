@@ -1,0 +1,339 @@
+
+import Foundation
+
+{
+"Categories": [
+    {
+        "data": {
+            "foodItem": "Baby Food",
+            "dateExtension": "Package Use By Date",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Baking Powder",
+            "dateExtension": "6 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    
+    {
+        "data": {
+            "foodItem": "Baking Soda",
+            "dateExtension": "18 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Biscuit and Pancake Mix",
+            "dateExtension": "15 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Cake, Brownie, Bread Mixes",
+            "dateExtension": "15 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Chocolate, Unsweetened/Semi‐Sweet",
+            "dateExtension": "24 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Chocolate Syrup",
+            "dateExtension": "2 Years",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Cocoa",
+            "dateExtension": "Indefinitely",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Corn Meal, Regular Degerminated",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": " Corn Meal, Stone Ground or Blue",
+            "dateExtension": "1 Month",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Cornstarch",
+            "dateExtension": "18 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "White Flour",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Whole Wheat Flour",
+            "dateExtension": "1 Month",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Canned Frosting",
+            "dateExtension": "10 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Dry Mix Frosting",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Flavored Gelatin",
+            "dateExtension": "18 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Unflavored Gelatin",
+            "dateExtension": "3 Years",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Pudding Mixes",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": " Beans, Dried, Split Peas, Lentils",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Low Acid Canned Goods",
+            "dateExtension": "4 Years",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "High Acid Canned Goods",
+            "dateExtension": "18 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Cereal: Ready to Eat",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Cereal: Cook & Serve",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Coffee: Whole Bean or Non‐Vacuum Bags",
+            "dateExtension": "3 Weeks",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Coffee: Ground or Canned/Vacuum Pack ",
+            "dateExtension": "2 Years",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Coffee: Instant",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "BBQ Sauce",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Cocktail & Chili Sauce",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Chopped Garlic",
+            "dateExtension": "18 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Gravy: Jars & Cans",
+            "dateExtension": "5 Years",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Gravy: Dry Mix",
+            "dateExtension": "2 Years",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Honey",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Horseradish: Jar",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Ketchup",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Jams, Jellies & Preserves ",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Pure Maple Syrup",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "arshmallows & Marshmallow Crème",
+            "dateExtension": "4 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Mayonnaise",
+            "dateExtension": "3 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Mustard",
+            "dateExtension": "18 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    
+    {
+        "data": {
+            "foodItem": "Olives: Black & Green",
+            "dateExtension": "18 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Milk: Canned & Evaporated",
+            "dateExtension": "12 Months",
+            "refigerated": "",
+            "frozen": ""
+        }
+    },
+    {
+        "data": {
+            "foodItem": "Molasses",
+            ...
