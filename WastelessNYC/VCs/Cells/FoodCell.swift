@@ -13,6 +13,8 @@ class FoodCell: UITableViewCell {
     
     @IBOutlet weak var dateExpiration: UILabel!
     @IBOutlet weak var foodName: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

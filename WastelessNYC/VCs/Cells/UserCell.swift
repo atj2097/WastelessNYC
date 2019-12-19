@@ -13,6 +13,10 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var foodAddress: UILabel!
+    @IBOutlet weak var trashButton: UIButton!
+    @IBAction func trashFunc(_ sender: UIButton) {
+        self.isHidden = true
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

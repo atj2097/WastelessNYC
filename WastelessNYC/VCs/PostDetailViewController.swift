@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 import MapKit
-
+import Kingfisher
 
 
 class PostDetailViewController: UIViewController {
@@ -33,6 +33,8 @@ class PostDetailViewController: UIViewController {
   override func viewDidLoad() {
         super.viewDidLoad()
         locationAuthorization()
+        setUpData()
+        // Do any additional setup after loading the view.
     }
     
   private func locationAuthorization() {
@@ -59,7 +61,11 @@ class PostDetailViewController: UIViewController {
     }
     
     private func setUpData() {
-    
+        let url = URL(string: post.imageURL)
+        postImageView.kf.setImage(with: url)
+        foodName.text = post.title
+        address.text = post.body
+        date.text = post.dateCreated?.description
     }
 
 }
@@ -84,3 +90,4 @@ class PostDetailViewController: UIViewController {
 //    print(error)
 //  }
 //}
+
