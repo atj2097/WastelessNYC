@@ -11,5 +11,6 @@ import Foundation
 enum CellIdentifier: String {
     case FoodCell
     case UserCell
+    case ExCell
     
 }

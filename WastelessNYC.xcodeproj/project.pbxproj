@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0268D33F10882F4B410CD2C3 /* Pods_WastelessNYCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E6EF67D1C04AF07DA1D1AA /* Pods_WastelessNYCTests.framework */; };
 		0658C9A461C9A1C1BB437DD5 /* Pods_WastelessNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D39FCBE6970F0AE845D0479 /* Pods_WastelessNYC.framework */; };
+		0BFC06C323ABFDC9007AAECC /* ExpirationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C914A2D23ABFB6F0009DBF1 /* ExpirationModel.swift */; };
+		0BFC06C523ABFFAE007AAECC /* ExCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC06C423ABFFAE007AAECC /* ExCell.swift */; };
 		25C0AD7B5F954B00ED557B04 /* Pods_WastelessNYC_WastelessNYCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EDBC60D16B785B66221A8A /* Pods_WastelessNYC_WastelessNYCUITests.framework */; };
 		3C914A2C23ABD09B0009DBF1 /* StringValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C914A2B23ABD09B0009DBF1 /* StringValidation.swift */; };
 		3C914A2E23ABFB6F0009DBF1 /* ExpirationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C914A2D23ABFB6F0009DBF1 /* ExpirationModel.swift */; };
@@ -58,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFC06C423ABFFAE007AAECC /* ExCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExCell.swift; sourceTree = "<group>"; };
 		0E305031906D6FC298424AF0 /* Pods-WastelessNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYC.debug.xcconfig"; path = "Target Support Files/Pods-WastelessNYC/Pods-WastelessNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		20D8D0E59D086502F9D96339 /* Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig"; path = "Target Support Files/Pods-WastelessNYC-WastelessNYCUITests/Pods-WastelessNYC-WastelessNYCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3C914A2B23ABD09B0009DBF1 /* StringValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringValidation.swift; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 			children = (
 				CB43944523ABCD56002B9165 /* CellIdentifier.swift */,
 				CB43942A23ABC3A9002B9165 /* FoodCell.swift */,
+				0BFC06C423ABFFAE007AAECC /* ExCell.swift */,
 				CB43944A23ABCECB002B9165 /* UserCell.swift */,
 			);
 			path = Cells;
@@ -529,6 +533,7 @@
 				CB43943323ABC769002B9165 /* Post.swift in Sources */,
 				CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */,
 				CB43945023ABF61E002B9165 /* MoreInfoVC.swift in Sources */,
+				0BFC06C523ABFFAE007AAECC /* ExCell.swift in Sources */,
 				CB43944223ABCAAD002B9165 /* CreateFoodVC.swift in Sources */,
 				CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */,
 				3C914A2E23ABFB6F0009DBF1 /* ExpirationModel.swift in Sources */,
@@ -545,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFC06C323ABFDC9007AAECC /* ExpirationModel.swift in Sources */,
 				CB91641023ABB72A0022B16B /* WastelessNYCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,6 +719,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WastelessNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -731,6 +738,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WastelessNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
