@@ -244,7 +244,11 @@
                         <viewLayoutGuide key="safeArea" id="XK3-mo-gvW"/>
                     </view>
                     <navigationItem key="navigationItem" title="All Food In NYC" id="l18-EL-NKX">
-                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="uAP-dy-6IQ"/>
+                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="uAP-dy-6IQ">
+                            <connections>
+                                <segue destination="uBg-da-wzj" kind="show" id="dUY-In-2s1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="oGU-Qz-8Bi" id="LB1-7Z-ZPz"/>
@@ -323,6 +327,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wlx-pQ-cml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5528" y="58"/>
+        </scene>
+        <!--More InfoVC-->
+        <scene sceneID="sSc-if-5Nh">
+            <objects>
+                <viewController id="uBg-da-wzj" customClass="MoreInfoVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ler-6e-X0H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3eq-Ew-gfA">
+                                <rect key="frame" x="8" y="309" width="406" height="504"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8V8-Hu-qmv" detailTextLabel="MNO-PG-MMS" style="IBUITableViewCellStyleValue1" id="e8a-Yv-TFf">
+                                        <rect key="frame" x="0.0" y="28" width="406" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e8a-Yv-TFf" id="Wlb-WP-pXn">
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8V8-Hu-qmv">
+                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MNO-PG-MMS">
+                                                    <rect key="frame" x="342" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZsC-DJ-EH2">
+                                <rect key="frame" x="87" y="100" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhi-rd-Rfh">
+                                <rect key="frame" x="20" y="280" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extended Expiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccK-Up-5eZ">
+                                <rect key="frame" x="261" y="280" width="153" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3eq-Ew-gfA" firstAttribute="leading" secondItem="ILH-9v-0kj" secondAttribute="leading" id="NOh-jD-9gu"/>
+                            <constraint firstItem="ILH-9v-0kj" firstAttribute="bottom" secondItem="3eq-Ew-gfA" secondAttribute="bottom" id="b4t-GJ-UIH"/>
+                            <constraint firstItem="ILH-9v-0kj" firstAttribute="trailing" secondItem="3eq-Ew-gfA" secondAttribute="trailing" id="gcX-tF-XgE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ILH-9v-0kj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1kq-S4-Wgp"/>
+                    <connections>
+                        <outlet property="extendedExpiration" destination="ccK-Up-5eZ" id="2Lf-Ri-fE8"/>
+                        <outlet property="foodName" destination="Lhi-rd-Rfh" id="oim-xG-r80"/>
+                        <outlet property="infoText" destination="ZsC-DJ-EH2" id="Agh-ou-iqE"/>
+                        <outlet property="tableView" destination="3eq-Ew-gfA" id="oYC-78-0Gk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foZ-iI-tdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4466.666666666667" y="-692.41071428571422"/>
         </scene>
         <!--Your Food-->
         <scene sceneID="hdx-ux-0OP">

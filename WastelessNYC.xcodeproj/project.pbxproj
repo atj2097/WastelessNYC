@@ -27,6 +27,7 @@
 		CB43944623ABCD56002B9165 /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944523ABCD56002B9165 /* CellIdentifier.swift */; };
 		CB43944B23ABCECB002B9165 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944A23ABCECB002B9165 /* UserCell.swift */; };
 		CB43944E23ABD859002B9165 /* WastelessNYCTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944D23ABD859002B9165 /* WastelessNYCTab.swift */; };
+		CB43945023ABF61E002B9165 /* MoreInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944F23ABF61E002B9165 /* MoreInfoVC.swift */; };
 		CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F523ABB7280022B16B /* AppDelegate.swift */; };
 		CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F723ABB7280022B16B /* SceneDelegate.swift */; };
 		CB9163FD23ABB7280022B16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9163FB23ABB7280022B16B /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		CB43944523ABCD56002B9165 /* CellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
 		CB43944A23ABCECB002B9165 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		CB43944D23ABD859002B9165 /* WastelessNYCTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WastelessNYCTab.swift; sourceTree = "<group>"; };
+		CB43944F23ABF61E002B9165 /* MoreInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoVC.swift; sourceTree = "<group>"; };
 		CB9163F223ABB7280022B16B /* WastelessNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WastelessNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9163F523ABB7280022B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9163F723ABB7280022B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				CB43943F23ABC95E002B9165 /* SignInVC.swift */,
 				CB43944123ABCAAD002B9165 /* CreateFoodVC.swift */,
 				CB43944323ABCD30002B9165 /* PostDetailViewController.swift */,
+				CB43944F23ABF61E002B9165 /* MoreInfoVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				CB43943A23ABC813002B9165 /* FirebaseFirestor.swift in Sources */,
 				CB43943323ABC769002B9165 /* Post.swift in Sources */,
 				CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */,
+				CB43945023ABF61E002B9165 /* MoreInfoVC.swift in Sources */,
 				CB43944223ABCAAD002B9165 /* CreateFoodVC.swift in Sources */,
 				CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */,
 				CB43944B23ABCECB002B9165 /* UserCell.swift in Sources */,
