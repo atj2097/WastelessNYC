@@ -43,3 +43,527 @@ struct Food: Codable{
 
 
 
+/*{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },
+   {
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },
+   {
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },
+   {
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },{
+       "data": {
+           "foodItem": "",
+           "dateExtension": "",
+           "refigerated": "",
+           "frozen": ""
+       }
+   },
+   
+*/
