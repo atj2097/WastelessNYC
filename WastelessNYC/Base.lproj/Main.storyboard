@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV2-5i-ffy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV2-5i-ffy">
                                 <rect key="frame" x="28" y="532" width="358" height="96"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="46"/>
@@ -48,9 +48,8 @@
                                     <action selector="createUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3p-tO-QRD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-Ob-yH1">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-Ob-yH1">
                                 <rect key="frame" x="21" y="682" width="373" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <state key="normal" title="Already have an account?">
@@ -69,16 +68,20 @@
                             <constraint firstItem="fVT-fJ-lax" firstAttribute="centerX" secondItem="efJ-RU-fMY" secondAttribute="centerX" id="4Bh-hU-EMw"/>
                             <constraint firstItem="SV8-6W-jZJ" firstAttribute="centerX" secondItem="fVT-fJ-lax" secondAttribute="centerX" id="53k-nk-V8h"/>
                             <constraint firstAttribute="bottom" secondItem="efJ-RU-fMY" secondAttribute="bottom" id="8BV-II-DU9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rhd-Ob-yH1" secondAttribute="bottom" constant="58" id="Asb-Y4-mxc"/>
                             <constraint firstItem="efJ-RU-fMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BFU-ff-ncq"/>
-                            <constraint firstItem="xV2-5i-ffy" firstAttribute="bottom" secondItem="efJ-RU-fMY" secondAttribute="bottom" id="GjV-iY-a6A"/>
+                            <constraint firstItem="xV2-5i-ffy" firstAttribute="bottom" secondItem="efJ-RU-fMY" secondAttribute="bottom" constant="-214" id="GjV-iY-a6A"/>
                             <constraint firstItem="3TB-oQ-dwq" firstAttribute="top" secondItem="SV8-6W-jZJ" secondAttribute="bottom" constant="78" id="IUg-cp-KL0"/>
-                            <constraint firstItem="xV2-5i-ffy" firstAttribute="leading" secondItem="efJ-RU-fMY" secondAttribute="leading" id="JqB-JF-H9o"/>
+                            <constraint firstItem="xV2-5i-ffy" firstAttribute="leading" secondItem="efJ-RU-fMY" secondAttribute="leading" constant="28" id="JqB-JF-H9o"/>
                             <constraint firstItem="SV8-6W-jZJ" firstAttribute="leading" secondItem="3TB-oQ-dwq" secondAttribute="leading" id="OH9-E1-UGK"/>
-                            <constraint firstItem="xV2-5i-ffy" firstAttribute="trailing" secondItem="efJ-RU-fMY" secondAttribute="trailing" id="Pzy-cw-VW7"/>
-                            <constraint firstItem="xV2-5i-ffy" firstAttribute="top" secondItem="efJ-RU-fMY" secondAttribute="top" id="TCL-Hr-M6K"/>
+                            <constraint firstItem="xV2-5i-ffy" firstAttribute="trailing" secondItem="efJ-RU-fMY" secondAttribute="trailing" constant="-28" id="Pzy-cw-VW7"/>
+                            <constraint firstItem="xV2-5i-ffy" firstAttribute="top" secondItem="efJ-RU-fMY" secondAttribute="top" constant="532" id="TCL-Hr-M6K"/>
+                            <constraint firstItem="Rhd-Ob-yH1" firstAttribute="top" secondItem="xV2-5i-ffy" secondAttribute="bottom" constant="54" id="TGl-54-ukr"/>
                             <constraint firstItem="efJ-RU-fMY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UlE-Pr-MwG"/>
+                            <constraint firstItem="Rhd-Ob-yH1" firstAttribute="trailing" secondItem="3TB-oQ-dwq" secondAttribute="trailing" id="dhF-4V-75D"/>
                             <constraint firstItem="SV8-6W-jZJ" firstAttribute="trailing" secondItem="3TB-oQ-dwq" secondAttribute="trailing" id="g07-1J-X5F"/>
                             <constraint firstItem="SV8-6W-jZJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lju-sW-9fP"/>
+                            <constraint firstItem="Rhd-Ob-yH1" firstAttribute="centerX" secondItem="xV2-5i-ffy" secondAttribute="centerX" id="mbo-Gh-K22"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -201,7 +204,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="121" id="3wy-8h-7PS" customClass="FoodCell" customModule="WastelessNYC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" rowHeight="121" id="3wy-8h-7PS" customClass="FoodCell" customModule="WastelessNYC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="414" height="121"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3wy-8h-7PS" id="EjX-z9-aOS">
@@ -320,7 +323,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="101" id="umJ-0W-UUd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="101" id="umJ-0W-UUd" customClass="UserCell" customModule="WastelessNYC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="umJ-0W-UUd" id="Vmx-4o-2mC">
@@ -352,6 +355,11 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foodAddress" destination="6rv-Oy-Oki" id="HYx-8e-ZLg"/>
+                                            <outlet property="foodImage" destination="4OI-88-0cR" id="xVv-0l-0OS"/>
+                                            <outlet property="foodName" destination="AFl-Y3-RDP" id="z6D-Ys-HQO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -362,15 +370,18 @@
                     <navigationItem key="navigationItem" id="aiA-5n-1l8">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="8hX-jP-AVS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="RWL-AT-uZg" id="Q1y-0V-wf6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZY-hG-zxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4431.884057971015" y="886.60714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Create FoodVC-->
         <scene sceneID="zak-G1-WJ3">
             <objects>
-                <viewController id="cyb-e9-yqP" sceneMemberID="viewController">
+                <viewController id="cyb-e9-yqP" customClass="CreateFoodVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BNR-J2-EEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -405,7 +416,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e17-3B-Blz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Expiration Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e17-3B-Blz">
                                 <rect key="frame" x="35" y="134" width="343" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -419,11 +430,21 @@
                                 <state key="normal" title="Create">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="create:" destination="cyb-e9-yqP" eventType="touchUpInside" id="iKE-eJ-u8C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yXa-Oj-VQ7"/>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="32p-I5-jtV" id="dW4-JY-36u"/>
+                        <outlet property="addressInputField" destination="nYs-ob-O7F" id="QeT-6H-1mx"/>
+                        <outlet property="createPost" destination="v3S-ck-2NO" id="GoF-aQ-X6u"/>
+                        <outlet property="datePicker" destination="rhO-Py-Egz" id="eol-DI-JwP"/>
+                        <outlet property="foodTextInput" destination="vN1-Zi-l7j" id="Wsv-ye-nAg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAZ-zE-UwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

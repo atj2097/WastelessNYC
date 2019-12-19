@@ -21,6 +21,10 @@
 		CB43943C23ABC83E002B9165 /* FirebaseStoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */; };
 		CB43943E23ABC8F8002B9165 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943D23ABC8F8002B9165 /* SignUpVC.swift */; };
 		CB43944023ABC95E002B9165 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43943F23ABC95E002B9165 /* SignInVC.swift */; };
+		CB43944223ABCAAD002B9165 /* CreateFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944123ABCAAD002B9165 /* CreateFoodVC.swift */; };
+		CB43944423ABCD30002B9165 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944323ABCD30002B9165 /* PostDetailViewController.swift */; };
+		CB43944623ABCD56002B9165 /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944523ABCD56002B9165 /* CellIdentifier.swift */; };
+		CB43944B23ABCECB002B9165 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944A23ABCECB002B9165 /* UserCell.swift */; };
 		CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F523ABB7280022B16B /* AppDelegate.swift */; };
 		CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F723ABB7280022B16B /* SceneDelegate.swift */; };
 		CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F923ABB7280022B16B /* ViewController.swift */; };
@@ -69,6 +73,10 @@
 		CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStoreImage.swift; sourceTree = "<group>"; };
 		CB43943D23ABC8F8002B9165 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		CB43943F23ABC95E002B9165 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		CB43944123ABCAAD002B9165 /* CreateFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFoodVC.swift; sourceTree = "<group>"; };
+		CB43944323ABCD30002B9165 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		CB43944523ABCD56002B9165 /* CellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
+		CB43944A23ABCECB002B9165 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		CB9163F223ABB7280022B16B /* WastelessNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WastelessNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9163F523ABB7280022B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9163F723ABB7280022B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,21 +146,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB43942923ABC388002B9165 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				CB43942A23ABC3A9002B9165 /* FoodCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		CB43942C23ABC47C002B9165 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				CB43944923ABCE9A002B9165 /* Cells */,
 				CB43942723ABC287002B9165 /* AllFoodVC.swift */,
 				CB43942D23ABC4A1002B9165 /* UserTableVC.swift */,
 				CB43943D23ABC8F8002B9165 /* SignUpVC.swift */,
 				CB43943F23ABC95E002B9165 /* SignInVC.swift */,
+				CB43944123ABCAAD002B9165 /* CreateFoodVC.swift */,
+				CB43944323ABCD30002B9165 /* PostDetailViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -174,6 +177,16 @@
 				CB43943B23ABC83E002B9165 /* FirebaseStoreImage.swift */,
 			);
 			path = FirebaseHelpers;
+			sourceTree = "<group>";
+		};
+		CB43944923ABCE9A002B9165 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB43944523ABCD56002B9165 /* CellIdentifier.swift */,
+				CB43942A23ABC3A9002B9165 /* FoodCell.swift */,
+				CB43944A23ABCECB002B9165 /* UserCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		CB9163E923ABB7280022B16B = {
@@ -205,7 +218,6 @@
 				CB43943123ABC756002B9165 /* Models */,
 				CB43942F23ABC6D1002B9165 /* GoogleService-Info.plist */,
 				CB43942C23ABC47C002B9165 /* VCs */,
-				CB43942923ABC388002B9165 /* Cells */,
 				CB9163F523ABB7280022B16B /* AppDelegate.swift */,
 				CB9163F723ABB7280022B16B /* SceneDelegate.swift */,
 				CB9163F923ABB7280022B16B /* ViewController.swift */,
@@ -476,7 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB43944623ABCD56002B9165 /* CellIdentifier.swift in Sources */,
 				CB43943C23ABC83E002B9165 /* FirebaseStoreImage.swift in Sources */,
+				CB43944423ABCD30002B9165 /* PostDetailViewController.swift in Sources */,
 				CB43942823ABC288002B9165 /* AllFoodVC.swift in Sources */,
 				CB43943523ABC79C002B9165 /* AppUser.swift in Sources */,
 				CB43943823ABC7F4002B9165 /* FirebaseAuth.swift in Sources */,
@@ -486,7 +500,9 @@
 				CB43943A23ABC813002B9165 /* FirebaseFirestor.swift in Sources */,
 				CB43943323ABC769002B9165 /* Post.swift in Sources */,
 				CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */,
+				CB43944223ABCAAD002B9165 /* CreateFoodVC.swift in Sources */,
 				CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */,
+				CB43944B23ABCECB002B9165 /* UserCell.swift in Sources */,
 				CB43943E23ABC8F8002B9165 /* SignUpVC.swift in Sources */,
 				CB91640023ABB7280022B16B /* WastelessNYC.xcdatamodeld in Sources */,
 				CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */,
