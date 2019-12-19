@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 class UserTableVC: UIViewController {
     var user: AppUser!
     var isCurrentUser = false
@@ -20,9 +21,9 @@ class UserTableVC: UIViewController {
     }
     var posts = [Post]() {
         didSet {
-            DispatchQueue.main.async { [weak self] in
-                self?.tableView.reloadSections(IndexSet(integer: 1), with: .none)
-            }
+            
+                tableView.reloadData()
+            
         }
     }
 
@@ -31,6 +32,8 @@ class UserTableVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+      user = AppUser(from: FirebaseAuthService.manager.currentUser!)
+        getPostsForThisUser()
         // Do any additional setup after loading the view.
     }
     
@@ -55,9 +58,11 @@ extension UserTableVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.UserCell.rawValue, for: indexPath) as! FoodCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.UserCell.rawValue, for: indexPath) as! UserCell
         var currentPost = posts[indexPath.row]
         cell.foodName.text = currentPost.title
+        let url = URL(string: currentPost.imageURL)
+        cell.foodImage.kf.setImage(with: url)
         return cell
     }
     
