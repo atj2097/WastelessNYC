@@ -29,7 +29,6 @@
 		CB43944E23ABD859002B9165 /* WastelessNYCTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944D23ABD859002B9165 /* WastelessNYCTab.swift */; };
 		CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F523ABB7280022B16B /* AppDelegate.swift */; };
 		CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F723ABB7280022B16B /* SceneDelegate.swift */; };
-		CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F923ABB7280022B16B /* ViewController.swift */; };
 		CB9163FD23ABB7280022B16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9163FB23ABB7280022B16B /* Main.storyboard */; };
 		CB91640023ABB7280022B16B /* WastelessNYC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB9163FE23ABB7280022B16B /* WastelessNYC.xcdatamodeld */; };
 		CB91640223ABB72A0022B16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB91640123ABB72A0022B16B /* Assets.xcassets */; };
@@ -84,7 +83,6 @@
 		CB9163F223ABB7280022B16B /* WastelessNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WastelessNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9163F523ABB7280022B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9163F723ABB7280022B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB9163F923ABB7280022B16B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB9163FC23ABB7280022B16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB9163FF23ABB7280022B16B /* WastelessNYC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WastelessNYC.xcdatamodel; sourceTree = "<group>"; };
 		CB91640123ABB72A0022B16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 				CB43942C23ABC47C002B9165 /* VCs */,
 				CB9163F523ABB7280022B16B /* AppDelegate.swift */,
 				CB9163F723ABB7280022B16B /* SceneDelegate.swift */,
-				CB9163F923ABB7280022B16B /* ViewController.swift */,
 				CB9163FB23ABB7280022B16B /* Main.storyboard */,
 				CB91640123ABB72A0022B16B /* Assets.xcassets */,
 				CB91640323ABB72A0022B16B /* LaunchScreen.storyboard */,
@@ -518,7 +515,6 @@
 				CB43943823ABC7F4002B9165 /* FirebaseAuth.swift in Sources */,
 				CB43944023ABC95E002B9165 /* SignInVC.swift in Sources */,
 				CB43942B23ABC3A9002B9165 /* FoodCell.swift in Sources */,
-				CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */,
 				CB43943A23ABC813002B9165 /* FirebaseFirestor.swift in Sources */,
 				CB43943323ABC769002B9165 /* Post.swift in Sources */,
 				CB43942E23ABC4A1002B9165 /* UserTableVC.swift in Sources */,

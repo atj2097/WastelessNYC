@@ -10,7 +10,7 @@
         <!--Sign UpVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignUpVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="BYZ-38-t0r" customClass="SignUpVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,7 @@
         <!--Sign InVC-->
         <scene sceneID="Eoe-aW-3dD">
             <objects>
-                <viewController id="kFm-Jh-SLD" customClass="SignInVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="kFm-Jh-SLD" customClass="SignInVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KDt-Wm-rWB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +189,7 @@
         <!--All FoodVC-->
         <scene sceneID="rAI-R2-Hsb">
             <objects>
-                <viewController id="l4k-aI-T1g" customClass="AllFoodVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllFoodVC" id="l4k-aI-T1g" customClass="AllFoodVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BLW-g7-MyR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,6 +438,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-ge-O8B">
                                 <rect key="frame" x="45" y="219" width="348" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="openPhotoPicker:" destination="cyb-e9-yqP" eventType="touchUpInside" id="Bbd-vN-Y6e"/>
+                                </connections>
                             </button>
                             <datePicker alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-Py-Egz">
                                 <rect key="frame" x="35" y="405" width="358" height="187"/>

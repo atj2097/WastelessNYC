@@ -22,6 +22,12 @@ class CreateFoodVC: UIViewController {
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var createPost: UIButton!
     
+    @IBAction func openPhotoPicker(_ sender: UIButton) {
+        let imagePickerVC = UIImagePickerController()
+        imagePickerVC.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        present(imagePickerVC, animated: true)
+    }
+    
     @IBOutlet weak var uploadPhoto: UIButton!
     @IBAction func create(_ sender: UIButton) {
         guard let title = foodTextInput.text, title != "", let addy = address.text, addy != "" else {
