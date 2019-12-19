@@ -16,6 +16,7 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var createUser: UIButton!
     
     @IBAction func createUser(_ sender: UIButton) {
+      trySignUp()
     }
     
     override func viewDidLoad() {
@@ -24,45 +25,23 @@ class SignUpVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @objc func validateFields() {
-        guard emailTextField.hasText, passwordTextField.hasText else {
-            signUpButton.isEnabled = false
-            return
-        }
-//          signUpButton.isEnabled = true
-//          signUpButton.backgroundColor = #colorLiteral(red: 0.06666666667, green: 0.968627451, blue: 0.2235294118, alpha: 1)
-//          signUpButton.layer.borderWidth = 3
-    }
-  
-  
   
   
   //MARK: Functions
-      
-//      @objc func showLogIn() {
-//             let loginVC = LoginVC()
-//             print("button pressed")
-//             loginVC.modalPresentationStyle = .formSheet
-//             present(loginVC, animated: true, completion: nil)
-//         }
-
-  
-  
   
     func trySignUp() {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
             showAlert(with: "Error", and: "Please fill out all fields.")
             return
         }
-//        guard email.isValidEmail else {
-//            showAlert(with: "Error", and: "Please enter a valid email")
-//            return
-//        }
-//        guard password.isValidPassword else {
-//            showAlert(with: "Error", and: "Please enter a valid password. Passwords must have at least 8 characters.")
-//            return
-//        }
+        guard email.isValidEmail else {
+            showAlert(with: "Error", and: "Please enter a valid email")
+            return
+        }
+        guard password.isValidPassword else {
+            showAlert(with: "Error", and: "Please enter a valid password. Passwords must have at least 8 characters.")
+            return
+        }
 
         FirebaseAuthService.manager.createNewUser(email: email.lowercased(), password: password) { [weak self] (result) in
             self?.handleCreateAccountResponse(with: result)

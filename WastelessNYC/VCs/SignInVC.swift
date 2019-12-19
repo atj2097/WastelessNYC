@@ -21,15 +21,50 @@ class SignInVC: UIViewController {
     @IBOutlet weak var signupButton: UIButton!
     
     @IBAction func loginUser(_ sender: UIButton) {
+      tryLogin()
     }
-    /*
-    // MARK: - Navigation
+    
+  //MARK: Functions
+  
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
+
+      func tryLogin() {
+          guard let email = emailTextField.text, let password = passwordTextFiekld.text else {
+              showAlert(with: "Error", and: "Please fill out all fields.")
+              return
+          }
+          guard email.isValidEmail else {
+              showAlert(with: "Error", and: "Please enter a valid email")
+              return
+          }
+          guard password.isValidPassword else {
+              showAlert(with: "Error", and: "Please enter a valid password. Passwords must have at least 8 characters.")
+              return
+          }
+          FirebaseAuthService.manager.loginUser(email: email.lowercased(), password: password) { (result) in
+              self.handleLoginResponse(with: result)
+          }
+      }
+
+  //MARK: Private methods
+
+      private func showAlert(with title: String, and message: String) {
+          let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+          alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+          present(alertVC, animated: true, completion: nil)
+      }
+
+      private func handleLoginResponse(with result: Result<(), Error>) {
+          switch result {
+          case .failure(let error):
+              showAlert(with: "Error", and: "Could not log in. Error: \(error)")
+          case .success:
+              let nextVC = UserTableVC()
+              print("button pressed")
+              nextVC.modalPresentationStyle = .fullScreen
+              present(nextVC, animated: true, completion: nil)
+
+          }
+      }
 }
