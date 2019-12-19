@@ -28,6 +28,7 @@ class AllFoodVC: UIViewController {
   }
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         getPosts()
@@ -98,13 +99,14 @@ self.navigationController?.pushViewController(postDetailVC, animated: true)
 
 
 extension AllFoodVC: UISearchBarDelegate {
-  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    searchWord = searchBar.text?.lowercased()
-    getPosts()
-  }
-    func searchBar(_ searchBar: UISearchBar, textDidReturn searchText: String) {
-        self.searchWord = searchText.lowercased()
-        getPostsForLoc(searchString: searchWord ?? "Brooklyn")
+//  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//    searchWord = searchBar.text?.lowercased()
+//    getPosts()
+//  }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            self.searchWord = searchBar.text
+               print("Searching...")
+               getPostsForLoc(searchString: searchWord ?? "Brooklyn")
     }
   
 }

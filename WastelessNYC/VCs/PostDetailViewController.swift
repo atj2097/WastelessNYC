@@ -32,7 +32,7 @@ class PostDetailViewController: UIViewController {
 
   override func viewDidLoad() {
         super.viewDidLoad()
-    locationManager.delegate = self 
+    locationManager.delegate = self
         locationAuthorization()
         setUpData()
     
