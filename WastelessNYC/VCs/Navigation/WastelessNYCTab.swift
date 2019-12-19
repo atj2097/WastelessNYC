@@ -10,6 +10,7 @@ import UIKit
 
 class WastelessNYCTab: UITabBarController {
 
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
