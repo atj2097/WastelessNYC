@@ -23,7 +23,8 @@ class UserTableVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
@@ -41,4 +42,18 @@ class UserTableVC: UIViewController {
         }
     }
 
+}
+extension UserTableVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.UserCell.rawValue, for: indexPath) as! FoodCell
+        var currentPost = posts[indexPath.row]
+        cell.foodName.text = currentPost.title
+        return cell
+    }
+    
+    
 }

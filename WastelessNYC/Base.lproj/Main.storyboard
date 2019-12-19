@@ -243,7 +243,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XK3-mo-gvW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="l18-EL-NKX"/>
+                    <navigationItem key="navigationItem" id="l18-EL-NKX">
+                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="uAP-dy-6IQ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="c2q-se-oUU" id="f6v-tJ-ZYN"/>
                     </connections>
@@ -390,11 +392,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <datePicker alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-Py-Egz">
-                                <rect key="frame" x="0.0" y="209" width="414" height="251"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Get rid of your food!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMG-jz-oxN">
                                 <rect key="frame" x="20" y="60" width="374" height="66"/>
                                 <constraints>
@@ -405,13 +402,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of food" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vN1-Zi-l7j">
-                                <rect key="frame" x="20" y="506" width="374" height="34"/>
+                                <rect key="frame" x="19" y="600" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32p-I5-jtV">
-                                <rect key="frame" x="20" y="602" width="374" height="34"/>
+                                <rect key="frame" x="20" y="671" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -424,7 +421,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3S-ck-2NO">
-                                <rect key="frame" x="122" y="713" width="168" height="64"/>
+                                <rect key="frame" x="123" y="763" width="168" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
                                 <state key="normal" title="Create">
@@ -434,16 +431,30 @@
                                     <action selector="create:" destination="cyb-e9-yqP" eventType="touchUpInside" id="iKE-eJ-u8C"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-aw-qr7">
+                                <rect key="frame" x="35" y="209" width="359" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-ge-O8B">
+                                <rect key="frame" x="45" y="219" width="348" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <datePicker alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-Py-Egz">
+                                <rect key="frame" x="35" y="405" width="358" height="187"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yXa-Oj-VQ7"/>
                     </view>
                     <connections>
                         <outlet property="address" destination="32p-I5-jtV" id="dW4-JY-36u"/>
-                        <outlet property="addressInputField" destination="nYs-ob-O7F" id="QeT-6H-1mx"/>
                         <outlet property="createPost" destination="v3S-ck-2NO" id="GoF-aQ-X6u"/>
                         <outlet property="datePicker" destination="rhO-Py-Egz" id="eol-DI-JwP"/>
                         <outlet property="foodTextInput" destination="vN1-Zi-l7j" id="Wsv-ye-nAg"/>
+                        <outlet property="imageView" destination="nYs-ob-O7F" id="QeT-6H-1mx"/>
+                        <outlet property="uploadPhoto" destination="Bcg-ge-O8B" id="l8a-fE-rrx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAZ-zE-UwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -513,6 +524,7 @@
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
         <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="questionmark.circle" catalog="system" width="64" height="60"/>
         <image name="trash" catalog="system" width="60" height="64"/>
     </resources>
 </document>
