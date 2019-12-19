@@ -186,7 +186,7 @@
             </objects>
             <point key="canvasLocation" x="1091" y="118"/>
         </scene>
-        <!--All FoodVC-->
+        <!--All Food In NYC-->
         <scene sceneID="rAI-R2-Hsb">
             <objects>
                 <viewController storyboardIdentifier="AllFoodVC" id="l4k-aI-T1g" customClass="AllFoodVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
@@ -243,7 +243,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XK3-mo-gvW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="l18-EL-NKX">
+                    <navigationItem key="navigationItem" title="All Food In NYC" id="l18-EL-NKX">
                         <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="uAP-dy-6IQ"/>
                     </navigationItem>
                     <connections>
@@ -323,7 +323,7 @@
             </objects>
             <point key="canvasLocation" x="5528" y="58"/>
         </scene>
-        <!--User TableVC-->
+        <!--Your Food-->
         <scene sceneID="hdx-ux-0OP">
             <objects>
                 <viewController id="lo9-9E-yaz" customClass="UserTableVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
@@ -365,6 +365,9 @@
                                                     <rect key="frame" x="367" y="11" width="36" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="trash" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="trashFunc:" destination="umJ-0W-UUd" eventType="touchUpInside" id="6hP-DI-1jO"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -372,6 +375,7 @@
                                             <outlet property="foodAddress" destination="6rv-Oy-Oki" id="HYx-8e-ZLg"/>
                                             <outlet property="foodImage" destination="4OI-88-0cR" id="xVv-0l-0OS"/>
                                             <outlet property="foodName" destination="AFl-Y3-RDP" id="z6D-Ys-HQO"/>
+                                            <outlet property="trashButton" destination="dYa-9q-Xrb" id="qXG-fp-wUH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -380,8 +384,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AvB-a1-jWO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aiA-5n-1l8">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="8hX-jP-AVS"/>
+                    <navigationItem key="navigationItem" title="Your Food" id="aiA-5n-1l8">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="8hX-jP-AVS">
+                            <connections>
+                                <action selector="postController:" destination="lo9-9E-yaz" id="qRW-8d-CDj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="RWL-AT-uZg" id="Q1y-0V-wf6"/>

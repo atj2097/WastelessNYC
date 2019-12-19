@@ -12,6 +12,12 @@ class UserTableVC: UIViewController {
     var user: AppUser!
     var isCurrentUser = false
     
+    @IBAction func postController(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = storyboard.instantiateViewController(identifier: "CreatePost") as! CreateFoodVC
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true, completion: nil)
+    }
     var posts = [Post]() {
         didSet {
             DispatchQueue.main.async { [weak self] in
