@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import Photos
+import AssetsLibrary
 
 class CreateFoodVC: UIViewController {
+    var imagePicker: UIImagePickerController = {
+        let imagePicker = UIImagePickerController()
+        return imagePicker
+        
+    }()
     var currentUser: AppUser!
     var image = UIImage() {
         didSet {
@@ -23,9 +30,7 @@ class CreateFoodVC: UIViewController {
     @IBOutlet weak var createPost: UIButton!
     
     @IBAction func openPhotoPicker(_ sender: UIButton) {
-        let imagePickerVC = UIImagePickerController()
-        imagePickerVC.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
-        present(imagePickerVC, animated: true)
+        present(imagePicker, animated: true)
     }
     
     @IBOutlet weak var uploadPhoto: UIButton!
@@ -48,9 +53,29 @@ class CreateFoodVC: UIViewController {
         self.handlePostResponse(withResult: result)
         }
     }
+    
+    func saveImage(imageData: Data)  {
+                
+               FirebaseStorageService.manager.storeImage(image: imageData, completion: { [weak self] (result) in
+                   switch result{
+                   case .success(let url):
+
+                       self?.imageURL = url
+                   case .failure(let error):
+                       //MARK: TODO - defer image not save alert, try again later. maybe make VC "dirty" to allow user to move on in nav stack
+                       print(error)
+                   }
+               })
+    }
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -92,27 +117,29 @@ class CreateFoodVC: UIViewController {
 }
 extension CreateFoodVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.editedImage] as? UIImage else {
-            //MARK: TODO - handle couldn't get image :(
-            return
-        }
-        self.image = image
+//        guard let image = info[.editedImage] as? UIImage else {
+//            //MARK: TODO - handle couldn't get image :(
+//            return
+//        }
         
-        guard let imageData = image.jpegData(compressionQuality: 1) else {
+        guard let originalImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
+            
+            print("Error")
+            
+            return}
+        self.image = originalImage
+        
+        guard let imageData = originalImage.jpegData(compressionQuality: 1) else {
             //MARK: TODO - gracefully fail out without interrupting UX
             return
         }
         
-        FirebaseStorageService.manager.storeImage(image: imageData, completion: { [weak self] (result) in
-            switch result{
-            case .success(let url):
-                //Note - defer UI response, update user image url in auth and in firestore when save is pressed
-                self?.imageURL = url
-            case .failure(let error):
-                //MARK: TODO - defer image not save alert, try again later. maybe make VC "dirty" to allow user to move on in nav stack
-                print(error)
-            }
-        })
+        dump(imageData)
+        saveImage(imageData: imageData)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
 }

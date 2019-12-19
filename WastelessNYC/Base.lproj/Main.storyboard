@@ -247,6 +247,7 @@
                         <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="uAP-dy-6IQ"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="oGU-Qz-8Bi" id="LB1-7Z-ZPz"/>
                         <outlet property="tableView" destination="c2q-se-oUU" id="f6v-tJ-ZYN"/>
                     </connections>
                 </viewController>
@@ -402,7 +403,7 @@
         <!--Create FoodVC-->
         <scene sceneID="zak-G1-WJ3">
             <objects>
-                <viewController id="cyb-e9-yqP" customClass="CreateFoodVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePost" id="cyb-e9-yqP" customClass="CreateFoodVC" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BNR-J2-EEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -450,12 +451,13 @@
                                     <action selector="create:" destination="cyb-e9-yqP" eventType="touchUpInside" id="iKE-eJ-u8C"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-aw-qr7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icloud.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-aw-qr7">
                                 <rect key="frame" x="35" y="209" width="359" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-ge-O8B">
-                                <rect key="frame" x="45" y="219" width="348" height="147"/>
+                                <rect key="frame" x="45" y="198" width="348" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="openPhotoPicker:" destination="cyb-e9-yqP" eventType="touchUpInside" id="Bbd-vN-Y6e"/>
@@ -510,7 +512,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w7l-VR-RzX">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Y50-Mg-7Hv" kind="relationship" relationship="viewControllers" id="bR7-mM-Q4i"/>
@@ -544,6 +547,7 @@
     <resources>
         <image name="bpxl-iphone-xs-max-wallpaper-3" width="1242" height="2688"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="icloud.and.arrow.up.fill" catalog="system" width="64" height="52"/>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
         <image name="plus" catalog="system" width="64" height="56"/>
         <image name="questionmark.circle" catalog="system" width="64" height="60"/>
