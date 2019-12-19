@@ -254,10 +254,10 @@
             </objects>
             <point key="canvasLocation" x="4431.884057971015" y="57.589285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Detail View Controller-->
         <scene sceneID="NGB-V2-f8f">
             <objects>
-                <viewController id="7eA-hn-7Yf" sceneMemberID="viewController">
+                <viewController id="7eA-hn-7Yf" customClass="PostDetailViewController" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O0n-rg-18s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,11 +302,22 @@
                                 <state key="normal" title="Grab It!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="grabIt:" destination="7eA-hn-7Yf" eventType="touchUpInside" id="2Qe-9h-68q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9Yp-Zu-h7q"/>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="tKy-hD-w8z" id="8EV-ZF-h4w"/>
+                        <outlet property="date" destination="IYb-LZ-Uv4" id="ITj-L7-yhp"/>
+                        <outlet property="foodName" destination="eII-Ky-Y5A" id="z6O-ZO-t5z"/>
+                        <outlet property="grabIt" destination="7zG-uo-7ec" id="QXI-Zc-3q1"/>
+                        <outlet property="mapViewLocation" destination="GSr-Bs-zdI" id="WO1-Aj-5hP"/>
+                        <outlet property="postImageView" destination="8dH-33-mYY" id="GKn-Rw-91M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wlx-pQ-cml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -486,7 +497,7 @@
         <!--WastelessNYC Tab-->
         <scene sceneID="yn4-oP-sda">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IKd-08-TMP" customClass="WastelessNYCTab" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabVC" automaticallyAdjustsScrollViewInsets="NO" id="IKd-08-TMP" customClass="WastelessNYCTab" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w7l-VR-RzX">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

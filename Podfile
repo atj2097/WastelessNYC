@@ -9,6 +9,7 @@ target 'WastelessNYC' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Firestore' 
 	pod 'Firebase/Storage'  
+	pod 'Kingfisher', '~> 5.0' 
   target 'WastelessNYCTests' do
     inherit! :search_paths
     # Pods for testing
