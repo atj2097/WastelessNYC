@@ -60,10 +60,11 @@ class SignInVC: UIViewController {
           case .failure(let error):
               showAlert(with: "Error", and: "Could not log in. Error: \(error)")
           case .success:
-              let nextVC = UserTableVC()
-              print("button pressed")
-              nextVC.modalPresentationStyle = .fullScreen
-              present(nextVC, animated: true, completion: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                       let loginViewController = storyboard.instantiateViewController(withIdentifier: "AllFoodVC") as! AllFoodVC
+//              let nextVC = UserTableVC()
+//              nextVC.modalPresentationStyle = .fullScreen
+//              present(nextVC, animated: true, completion: nil)
 
           }
       }
