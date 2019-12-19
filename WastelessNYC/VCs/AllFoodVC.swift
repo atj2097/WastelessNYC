@@ -20,16 +20,15 @@ class AllFoodVC: UIViewController {
         }
     }
   
-  var searchString: String? = nil {
-    didSet {
-      tableView.reloadData()
-      getPosts()
-      searchBar.delegate = self
-    }
-  }
   
+  private var searchWord: String? {
+      didSet {
+         tableView.reloadData()
+      }
+  }
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         getPosts()
@@ -44,6 +43,17 @@ class AllFoodVC: UIViewController {
                 print("error getting posts \(error)")
             }
         }
+    }
+    
+    private func getPostsForLoc(searchString: String) {
+        FirestoreService.manager.getPostsForLocation(forLocation: searchString, completion: {(result) in
+            switch result {
+                       case .success(let posts):
+                           self.posts = posts
+                       case .failure(let error):
+                           print("error getting posts \(error)")
+                       }
+        })
     }
 
 
@@ -74,22 +84,29 @@ extension AllFoodVC: UITableViewDataSource {
 extension AllFoodVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let post = posts[indexPath.row]
-        let postDetailVC = PostDetailViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let postDetailVC = storyboard.instantiateViewController(identifier: "PostDVC") as! PostDetailViewController
         postDetailVC.post = post
 self.navigationController?.pushViewController(postDetailVC, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return  101
+    }
+   
 }
 
 
 extension AllFoodVC: UISearchBarDelegate {
-  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    searchString = searchBar.text?.lowercased()
-    
-    getPosts()
-  }
-  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-    searchBar.resignFirstResponder()
-  }
-  
+//  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//    searchWord = searchBar.text?.lowercased()
+//    getPosts()
+//  }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            self.searchWord = searchBar.text
+               print("Searching...")
+               getPostsForLoc(searchString: searchWord ?? "Brooklyn")
+    }
   
 }

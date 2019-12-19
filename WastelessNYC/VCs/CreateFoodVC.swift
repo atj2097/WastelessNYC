@@ -17,6 +17,7 @@ class CreateFoodVC: UIViewController {
         return imagePicker
         
     }()
+    var burroughs = ["Manhattan", "Queens", "Bronx", "Staten Island", "Brooklyn"]
     var currentUser: AppUser!
     var image = UIImage() {
         didSet {
@@ -43,6 +44,15 @@ class CreateFoodVC: UIViewController {
         guard let imageURLString = imageURL?.absoluteString else {
             return
         }
+      
+      
+        
+        guard burroughs.contains(addy) else {
+             showAlert(with: "Error", and: "Must type in a Burrough ex. Brooklyn")
+            return
+        }
+       
+        
         
         guard let user = FirebaseAuthService.manager.currentUser else {
             showAlert(with: "Error", and: "You must be logged in to create a post")

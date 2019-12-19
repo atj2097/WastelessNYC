@@ -48,19 +48,24 @@ extension MoreInfoVC: UITableViewDelegate, UITableViewDataSource {
     }
     
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
     return foodList.count
+
+
   }
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        <#code#>
 //    }
 //  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
     guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.ExCell.rawValue) else
     {return UITableViewCell()}
     let food = foodList[indexPath.row]
     cell.textLabel?.text = food.foodItem
     cell.detailTextLabel?.text = food.dateExtension
     
+
     return cell
   }
   
