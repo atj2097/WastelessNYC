@@ -26,6 +26,7 @@
 		CB43944423ABCD30002B9165 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944323ABCD30002B9165 /* PostDetailViewController.swift */; };
 		CB43944623ABCD56002B9165 /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944523ABCD56002B9165 /* CellIdentifier.swift */; };
 		CB43944B23ABCECB002B9165 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944A23ABCECB002B9165 /* UserCell.swift */; };
+		CB43944E23ABD859002B9165 /* WastelessNYCTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43944D23ABD859002B9165 /* WastelessNYCTab.swift */; };
 		CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F523ABB7280022B16B /* AppDelegate.swift */; };
 		CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F723ABB7280022B16B /* SceneDelegate.swift */; };
 		CB9163FA23ABB7280022B16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9163F923ABB7280022B16B /* ViewController.swift */; };
@@ -79,6 +80,7 @@
 		CB43944323ABCD30002B9165 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		CB43944523ABCD56002B9165 /* CellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
 		CB43944A23ABCECB002B9165 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CB43944D23ABD859002B9165 /* WastelessNYCTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WastelessNYCTab.swift; sourceTree = "<group>"; };
 		CB9163F223ABB7280022B16B /* WastelessNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WastelessNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9163F523ABB7280022B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9163F723ABB7280022B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		CB43942C23ABC47C002B9165 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				CB43944C23ABD82E002B9165 /* Navigation */,
 				CB43944923ABCE9A002B9165 /* Cells */,
 				CB43942723ABC287002B9165 /* AllFoodVC.swift */,
 				CB43942D23ABC4A1002B9165 /* UserTableVC.swift */,
@@ -197,6 +200,14 @@
 				CB43944A23ABCECB002B9165 /* UserCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB43944C23ABD82E002B9165 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CB43944D23ABD859002B9165 /* WastelessNYCTab.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		CB9163E923ABB7280022B16B = {
@@ -515,6 +526,7 @@
 				CB9163F623ABB7280022B16B /* AppDelegate.swift in Sources */,
 				CB43944B23ABCECB002B9165 /* UserCell.swift in Sources */,
 				CB43943E23ABC8F8002B9165 /* SignUpVC.swift in Sources */,
+				CB43944E23ABD859002B9165 /* WastelessNYCTab.swift in Sources */,
 				CB91640023ABB7280022B16B /* WastelessNYC.xcdatamodeld in Sources */,
 				3C914A2C23ABD09B0009DBF1 /* StringValidation.swift in Sources */,
 				CB9163F823ABB7280022B16B /* SceneDelegate.swift in Sources */,

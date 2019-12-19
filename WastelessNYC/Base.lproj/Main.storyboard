@@ -480,10 +480,10 @@
             </objects>
             <point key="canvasLocation" x="3521.739130434783" y="57.589285714285708"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--WastelessNYC Tab-->
         <scene sceneID="yn4-oP-sda">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IKd-08-TMP" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IKd-08-TMP" customClass="WastelessNYCTab" customModule="WastelessNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w7l-VR-RzX">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
